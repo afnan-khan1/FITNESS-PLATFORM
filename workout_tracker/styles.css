@@ -1,0 +1,33 @@
+.calendar {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.calendar h2 {
+  text-align: center;
+}
+
+.calendar .month {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.calendar .day {
+  width: calc(100% / 7);
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.marked {
+  background-color: #ffd700 !important; /* Bright yellow */
+  color: #ff6347 !important; /* Tomato red */
+  border-radius: 50%; /* Makes the marked dates circular */
+}
+
+.calendar .day.marked {
+  background-color: #ffd700; /* Bright yellow */
+  color: #ff6347; /* Tomato red */
+}

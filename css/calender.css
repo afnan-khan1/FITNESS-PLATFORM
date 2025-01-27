@@ -1,0 +1,148 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  color: #4caf50;
+}
+
+.exercise-buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.exercise-buttons button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.exercise-buttons button:hover {
+  background-color: #45a049;
+}
+
+#calendar {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.fc-header-toolbar {
+  background-color: #4caf50;
+  color: white;
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
+}
+
+.fc-view-container {
+  padding: 20px;
+}
+
+.fc th,
+.fc td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.fc-day-header {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.fc-day {
+  background: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.fc-day:hover {
+  background: #f4f4f4;
+}
+
+.fc-event {
+  background: #6c7ae0;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin: 10px 0 5px;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: calc(100% - 22px); /* Adjusted for padding and border */
+}
+
+form button {
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #45a049;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background: #f4f4f4;
+}
+
+tr:nth-child(even) {
+  background: #f9f9f9;
+}

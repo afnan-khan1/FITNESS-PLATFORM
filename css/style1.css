@@ -1,0 +1,48 @@
+/* styles.css */
+.image-text-section {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.image-text {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    transition: transform 0.2s ease;
+    margin: 20px 0; /* Add margin to separate the sections */
+}
+
+.image-text:hover {
+    transform: translateY(-5px);
+}
+
+.image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 0%;
+}
+
+.image.left {
+    margin-right: 20px;
+}
+
+.text {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.text h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.text p {
+    margin: 10px 0 0;
+    font-size: 16px;
+    color: #555;
+}

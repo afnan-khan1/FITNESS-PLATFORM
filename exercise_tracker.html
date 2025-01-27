@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Tracker</title>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css' rel='stylesheet' />
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js'></script>
+</head>
+<body>
+    <!-- Calendar for tracking exercises -->
+    <div id="calendar"></div>
+
+    <!-- Buttons to simulate marking exercises -->
+    <button class="markExercise" data-exercise="Chest">Mark Chest Exercise</button>
+    <button class="markExercise" data-exercise="Back">Mark Back Exercise</button>
+    <button class="markExercise" data-exercise="Cardio">Mark Cardio Exercise</button>
+    <button class="markExercise" data-exercise="Triceps_Biceps">Mark Triceps/Biceps Exercise</button>
+    <button class="markExercise" data-exercise="Legs">Mark Legs Exercise</button>
+    <button class="markExercise" data-exercise="Abs">Mark Abs Exercise</button>
+
+    <script>
+        // Function to mark an exercise on the calendar
+        function markExercise(exercise) {
+            // Get today's date
+            var today = moment().format('YYYY-MM-DD');
+
+            // Add a new event for the selected exercise
+            $('#calendar').fullCalendar('renderEvent', {
+                title: exercise + ' Exercise',
+                start: today,
+                allDay: true
+            });
+        }
+
+        $(document).ready(function() {
+            $('#calendar').fullCalendar({
+                // Set up calendar options here
+                defaultView: 'month',
+                editable: true,
+                eventLimit: true
+            });
+
+            // Add event listener to all exercise buttons
+            $('.markExercise').on('click', function() {
+                var exercise = $(this).data('exercise');
+                markExercise(exercise);
+            });
+        });
+    </script>
+    <php>
+        fun(date,tag)
+    </php>
+</body>
+</html>
